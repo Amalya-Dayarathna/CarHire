@@ -1,4 +1,4 @@
-package com.mtit.service;
+package lk.sliit.hotel.carhirepublisher;
 
 import java.util.ArrayList;
 

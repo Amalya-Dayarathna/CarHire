@@ -1,12 +1,11 @@
-package com.mtit.service;
+package lk.sliit.hotel.carhirepublisher;
 
-public class PriusCar implements Car {
-
+public class KDHVan implements Car {
 	
 	//Attributes
-	private String name = "Prius Car";
-	private double charge = 12000;
-	private String description = " Luxury Car || Four seats available without driver|| ";
+	private String name = "KDH Van";
+	private double charge = 15000;
+	private String description = " Luxury Van || Sixteen seats available without driver|| ";
 
 	@Override
 	public void printDetails() {
@@ -21,4 +20,5 @@ public class PriusCar implements Car {
 		
 	}
 	
+
 }

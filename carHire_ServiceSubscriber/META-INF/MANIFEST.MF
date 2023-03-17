@@ -4,8 +4,8 @@ Automatic-Module-Name: carHire.ServiceSubscriber
 Bundle-Name: CarHire_ServiceSubscriber
 Bundle-SymbolicName: carHire_ServiceSubscriber
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: carhire_servicesubscriber.ServiceActivator
+Bundle-Activator: lk.sliit.hotel.carhiresubscriber.ServiceActivator
 Bundle-RequiredExecutionEnvironment: JavaSE-16
-Import-Package: com.mtit.service,
+Import-Package: lk.sliit.hotel.carhirepublisher,
  org.osgi.framework;version="1.3.0"
 

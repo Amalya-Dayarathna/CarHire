@@ -1,13 +1,13 @@
-package carhire_servicesubscriber;
+package lk.sliit.hotel.carhiresubscriber;
 
-
-import com.mtit.service.CarHire_PublishService;
 
 import java.util.Scanner;
 
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceReference;
+
+import lk.sliit.hotel.carhirepublisher.CarHire_PublishService;
 
 
 public class ServiceActivator implements BundleActivator {
