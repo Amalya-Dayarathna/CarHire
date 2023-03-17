@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Automatic-Module-Name: carHire.ServiceSubscriber
+Bundle-Name: CarHire_ServiceSubscriber
+Bundle-SymbolicName: carHire_ServiceSubscriber
+Bundle-Version: 1.0.0.qualifier
+Bundle-Activator: carhire_servicesubscriber.ServiceActivator
+Bundle-RequiredExecutionEnvironment: JavaSE-16
+Import-Package: com.mtit.service,
+ org.osgi.framework;version="1.3.0"
+
