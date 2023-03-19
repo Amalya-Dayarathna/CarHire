@@ -27,7 +27,7 @@ public class ServiceActivator implements BundleActivator {
 		int option;
 		
 		//Display when the subscriber starts
-		System.out.println("Car-Hire Subscriber Service Started");
+		//System.out.println("Car-Hire Subscriber Service Started");
 		
 		//Refer the registered service
 		serviceReference = context.getServiceReference(CarHire_PublishService.class.getName());
@@ -36,11 +36,18 @@ public class ServiceActivator implements BundleActivator {
 		CarHire_PublishService servicePublish = (CarHire_PublishService)context.getService(serviceReference);
 		
 		//Display messages
-		System.out.println("=====Welcome to Hotel BlueLock========");
+		
+		System.out.println("\n");
+		
+		System.out.println("======== Welcome to Hotel BlueLock ========");
 		System.out.println("Option 1 : View Cars");
 		System.out.println("Option 2 : Book Cars For Hire");
-		System.out.println("Option 3 : Cancel Bookings");
-		System.out.println("===================================");
+		System.out.println("Option 3 : View Bookings");
+		//System.out.println("Option 3 : Cancel Booking");
+		System.out.println("===========================================\n");
+		
+		
+		
 		
 		System.out.print("Enter option (1 or 2 or 3): ");
 		option = sc.nextInt();
@@ -48,13 +55,20 @@ public class ServiceActivator implements BundleActivator {
 		//Selection
 		if (option == 1) {
 			servicePublish.viewCars();
+			this.start(context);
 		}
 		else if (option == 2) {
-			servicePublish.bookCars(option,days);
+			servicePublish.bookCars(option);
+			
+			this.start(context);
 		}
 		else if (option == 3) {
-			servicePublish.cancelBooking(bookingId);
+			servicePublish.viewBooking();
+			this.start(context);
 		}
+		/*else if (option == 4) {
+			servicePublish.cancelBooking(bookingId);
+		}*/
 		else {
 			System.out.println("Invalid Option !!!");
 		}
